@@ -34,3 +34,15 @@ def borrow(book_id):
     cur.execute("UPDATE books SET available=0 WHERE id=?", (book_id,))
     conn.commit()
     conn.close()
+    
+
+
+import csv
+
+def export_csv():
+    books = list_books()
+    with open("report.csv", "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["id", "title", "author", "available"])
+        writer.writerows(books)
+
