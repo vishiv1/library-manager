@@ -16,15 +16,23 @@ Command-line application in Python using SQLite.
 
 
 
-\## Database
+\## Requirements
 
-A sample SQLite database is provided in `data/library.db`.
+\- Python 3.10+
+
+\- pip
 
 
 
-If you want to use your own database, update the path in `settings.py`
+\## Setup
 
-(based on `settings\_example.py`).
+1\. Clone the repository:
+
+```bash
+
+git clone https://github.com/vishiv1/library-manager.git
+
+cd library-manager
 
 
 
